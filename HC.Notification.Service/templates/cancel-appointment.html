@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Overture Healthcare Solutions</title>
+</head>
+
+<body style="-webkit-text-size-adjust: none; box-sizing: border-box; color: #74787E; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; height: 100%; line-height: 1.4; margin: 0; width: 100% !important;"
+      bgcolor="#F2F4F6">
+    <style type="text/css">
+        body {
+            width: 100% !important;
+            height: 100%;
+            margin: 0;
+            line-height: 1.4;
+            background-color: #F2F4F6;
+            color: #74787E;
+            -webkit-text-size-adjust: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .email-body_inner {
+                width: 100% !important;
+            }
+
+            .email-footer {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0; padding: 0; width: 100%;"
+           bgcolor="#F2F4F6">
+        <tr>
+            <td align="center" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; word-break: break-word;">
+                <table class="email-content" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0; padding: 0; width: 100%;">
+                    <tr>
+                        <td class="email-body" width="100%" cellpadding="0" cellspacing="0" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-bottom-color: #EDEFF2; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #EDEFF2; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0; padding:15px 0px; width: 100%; word-break: break-word;"
+                            bgcolor="#F3F3F3">
+                            <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0"
+                                   style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0 auto; padding: 0; width: 570px; box-shadow: 0px 0px 20px #ddd; -webkit-box-shadow: 0px 0px 20px #ddd;" " bgcolor="
+                                   #FFFFFF">
+
+                                <tr>
+                                    <td class="top-image" align="center" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; border-top: 5px solid #00a8cb; text-align: center; padding: 10px;">
+                                        <img src="../Files/images/overturelogo.png" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-cell" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 10px; word-break: break-word;">
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.5em; margin: 0px; padding-top: 35px; border-top:1px solid #ddd"
+                                           align="center">
+                                            <strong>Hello {{patientOrStaffName}},</strong><br />
+                                            Your Appointment has canceled, below is appointment detail.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-cell" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding:10px 35px 35px 35px; word-break: break-word;">
+                                        <h1 style="box-sizing: border-box; color: #4fac65; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 25px; font-weight: bold; margin-top: 0; margin-bottom:30px;"
+                                            align="center">
+                                            Appointment Canceld
+                                        </h1>
+                                        <!-- <h2 style="box-sizing: border-box; color: #2F3133; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 20px; font-weight: normal; margin-top: 0;"
+                                            align="center">Hi {{name}}</h2> -->
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 1.5em; margin-top: 0;"
+                                           align="center">Appointment Type -<strong>{{appointmentType}}</strong></p>
+
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 1.5em; margin-top: 0;"
+                                           align="center">Contact Person -<strong>{{withName}}</strong></p>
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 1.5em; margin-top: 0;"
+                                           align="center">Start Time/End Time -<strong>{{startEndTime}}</strong></p>
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 1.5em; margin-top: 0;"
+                                           align="center">Date -<strong>{{date}}</strong></p>
+
+                                        <p style="box-sizing: border-box; color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 1.5em; margin-top: 0;"
+                                           align="center">Location -<strong>{{address}}</strong></p>
+
+                                        <!--<p style="box-sizing: border-box; color: #74787E; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 1.5em; margin-top: 0;" align="left">For security, this request was received from a {{operating_system}} device using {{browser_name}}. If you did not request a password reset, please ignore this email or <a href="{{support_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">contact support</a> if you have questions.</p>-->
+                                        <p style="box-sizing: border-box; color: rgba(0, 0, 0, 0.60); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 1.5em; margin: 0px 20px 10px; padding-top: 15px; border-top:1px solid #ddd"
+                                           align="center">If you need to rearrange your appointment, please let us know before a day</p>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#3a3a3a" style="box-sizing: border-box; background:#3a3a3a; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 0px 5px; word-break: break-word;">
+                                        <table class="footer" align="center" width="100%" bgcolor="#3a3a3a" cellpadding="0"
+                                               cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; background:#3a3a3a;">
+                                            <tr>
+                                                <td align="center" style="box-sizing: border-box; color: rgba(255, 255, 255, 0.50); font-size: 12px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; word-break: break-word; padding:10px 0px; border-top: 1px solid #545454;">
+                                                    Your Good Health! <span style="color:#ffffff;">&#128578</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

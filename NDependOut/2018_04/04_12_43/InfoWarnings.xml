@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<InfoWarnings>
+  <Info>Begin full analysis with NDepend v2018.1.0</Info>
+  <Info>Concurrent mode</Info>
+  <Warning>Source code info won't be available for the assembly {HL7-dotnetcore}: Corresponding PDB file not found in any of the folder specified.
+PDB file production can be enabled in Visual Studio:  Project -&gt; Properties -&gt; Build -&gt; Advanced... -&gt; Debug Info = 'full' or 'pdb-only'</Warning>
+  <Info>.NET Assemblies loaded from {D:\Official\Code\HC.Patient\HC.Web\bin\debug\netcoreapp2.0} 
+   HC.Patient.Web.dll   v1.0.0.0
+   HC.Patient.Data.dll   v1.0.0.0
+   HC.Patient.Entity.dll   v1.0.0.0
+   HC.Patient.Service.dll   v1.0.0.0
+   HC.Common.dll   v1.0.0.0
+   HC.Patient.Model.dll   v1.0.0.0
+   HC.Patient.Repositories.dll   v1.0.0.0
+   HC.Repositories.dll   v1.0.0.0
+   HC.Service.dll   v1.0.0.0
+   HC.Model.dll   v1.0.0.0
+   NLog.Targets.ElasticSearch.dll   v1.0.0.0
+   EDIGenerator.dll   v1.0.0.0
+   EDIParser.dll   v1.0.0.0
+   CCDAGeneration.dll   v1.0.0.0
+   OpenTok.Server.dll   v1.0.1.0
+   HL7SDK.dll   v1.0.4.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6}  [ 0 , 19 ]
+   System.Runtime.dll   v4.2.0.0
+   System.Diagnostics.Debug.dll   v4.1.0.0
+   System.Collections.dll   v4.1.0.0
+   System.Threading.Tasks.dll   v4.1.0.0
+   System.Linq.Expressions.dll   v4.2.0.0
+   System.Data.Common.dll   v4.2.0.0
+   System.Net.Http.dll   v4.2.0.0
+   System.Runtime.Extensions.dll   v4.2.0.0
+   System.Security.Claims.dll   v4.1.0.0
+   System.Xml.ReaderWriter.dll   v4.2.0.0
+   System.IO.FileSystem.dll   v4.1.0.0
+   System.IO.Compression.dll   v4.2.0.0
+   System.Linq.dll   v4.2.0.0
+   Microsoft.CSharp.dll   v4.0.3.0
+   System.Linq.Queryable.dll   v4.0.3.0
+   System.ComponentModel.dll   v4.0.3.0
+   System.Security.Principal.dll   v4.1.0.0
+   System.Runtime.InteropServices.RuntimeInformation.dll   v4.0.2.0
+   System.ComponentModel.Annotations.dll   v4.2.0.0
+   System.Xml.XDocument.dll   v4.1.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6}  [ 20 , 26 ]
+   System.Text.RegularExpressions.dll   v4.2.0.0
+   System.Security.Cryptography.Algorithms.dll   v4.3.0.0
+   System.Security.Cryptography.Primitives.dll   v4.1.0.0
+   System.Net.Primitives.dll   v4.1.0.0
+   System.Console.dll   v4.1.0.0
+   System.Runtime.InteropServices.dll   v4.2.0.0
+   mscorlib.dll   v4.0.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Program Files\dotnet\store\x64\netcoreapp2.0}  [ 0 , 19 ]
+   .\Microsoft.Extensions.Configuration.UserSecrets\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.dll   v2.0.0.0
+   .\Microsoft.Extensions.Configuration.Abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll   v2.0.0.0
+   .\Microsoft.Extensions.DependencyInjection.Abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll   v2.0.0.0
+   .\Microsoft.AspNetCore.Mvc.Core\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll   v2.0.1.0
+   .\Microsoft.Extensions.Logging.Abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll   v2.0.0.0
+   .\Microsoft.AspNetCore.Mvc.Abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll   v2.0.1.0
+   .\Microsoft.Extensions.Primitives\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll   v2.0.0.0
+   .\Microsoft.EntityFrameworkCore\2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Hosting.Abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll   v2.0.1.0
+   .\Microsoft.IdentityModel.Tokens\5.1.4\lib\netstandard1.4\Microsoft.IdentityModel.Tokens.dll   v5.1.4.0
+   .\Microsoft.AspNetCore.Http.Abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Authorization\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Mvc.Formatters.Json\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll   v2.0.1.0
+   .\Microsoft.EntityFrameworkCore.SqlServer\2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Routing\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Routing.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Diagnostics.Abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll   v2.0.1.0
+   .\Microsoft.EntityFrameworkCore.Relational\2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll   v2.0.1.0
+   .\Newtonsoft.Json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll   v10.0.0.0
+   .\Microsoft.AspNetCore.Mvc.ViewFeatures\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll   v2.0.1.0
+   .\Microsoft.Extensions.Options\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll   v2.0.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Program Files\dotnet\store\x64\netcoreapp2.0}  [ 20 , 38 ]
+   .\System.IdentityModel.Tokens.Jwt\5.1.4\lib\netstandard1.4\System.IdentityModel.Tokens.Jwt.dll   v5.1.4.0
+   .\Microsoft.AspNetCore.Http.Features\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Hosting\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.dll   v2.0.1.0
+   .\Microsoft.AspNetCore\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Server.Kestrel\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.Server.IISIntegration\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Server.IISIntegration.dll   v2.0.1.0
+   .\Microsoft.Extensions.Configuration\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll   v2.0.0.0
+   .\Microsoft.Extensions.Configuration.FileExtensions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll   v2.0.0.0
+   .\Microsoft.Extensions.Configuration.Json\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll   v2.0.0.0
+   .\Microsoft.Extensions.Configuration.EnvironmentVariables\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll   v2.0.0.0
+   .\Microsoft.Extensions.Configuration.Binder\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll   v2.0.0.0
+   .\Microsoft.AspNetCore.Http\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll   v2.0.1.0
+   .\Microsoft.AspNetCore.StaticFiles\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.StaticFiles.dll   v2.0.1.0
+   .\Microsoft.Extensions.FileProviders.Physical\2.0.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll   v2.0.0.0
+   .\Microsoft.Extensions.FileProviders.Abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll   v2.0.0.0
+   .\Microsoft.Extensions.Logging.Console\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Console.dll   v2.0.0.0
+   .\Microsoft.AspNetCore.Diagnostics\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.dll   v2.0.1.0
+   .\Microsoft.Net.Http.Headers\2.0.1\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll   v2.0.1.0
+   .\System.Data.SqlClient\4.4.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll   v4.2.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Users\davinder.pal\.nuget\packages}  [ 0 , 19 ]
+   .\HL7-dotnetcore\2.2.0\lib\netstandard1.3\HL7-dotnetcore.dll   v2.2.0.0
+   .\NodaTime\2.0.2\lib\netstandard1.3\NodaTime.dll   v2.0.2.0
+   .\Ical.Net\3.0.11-net-core-beta\lib\netstandard1.3\Ical.Net.dll   v1.0.0.0
+   .\JsonApiDotNetCore\2.1.10\lib\netstandard1.6\JsonApiDotNetCore.dll   v2.1.10.0
+   .\Swashbuckle.AspNetCore.SwaggerGen\1.0.0\lib\netstandard1.6\Swashbuckle.AspNetCore.SwaggerGen.dll   v1.0.0.0
+   .\Swashbuckle.AspNetCore.Swagger\1.0.0\lib\netstandard1.6\Swashbuckle.AspNetCore.Swagger.dll   v1.0.0.0
+   .\NLog\5.0.0-beta05\lib\netstandard1.5\NLog.dll   v5.0.0.0
+   .\Microsoft.AspNetCore.Cors\1.1.2\lib\netstandard1.3\Microsoft.AspNetCore.Cors.dll   v1.1.2.0
+   .\Swashbuckle.AspNetCore.SwaggerUI\1.0.0\lib\netstandard1.6\Swashbuckle.AspNetCore.SwaggerUI.dll   v1.0.0.0
+   .\Unofficial.Ionic.Zip\1.9.1.8\lib\Ionic.Zip.dll   v1.9.1.8
+   .\Microsoft.ApplicationInsights.AspNetCore\2.0.0\lib\netstandard1.6\Microsoft.ApplicationInsights.AspNetCore.dll   v2.0.0.0
+   .\NLog.Web.AspNetCore\4.3.1\lib\netstandard1.3\NLog.Web.AspNetCore.dll   v4.0.0.0
+   .\Microsoft.AspNetCore.Mvc\1.1.3\lib\netstandard1.6\Microsoft.AspNetCore.Mvc.dll   v1.1.3.0
+   .\Elmah.Io.AspNetCore\3.2.41-pre\lib\netstandard1.1\Elmah.Io.AspNetCore.dll   v3.2.41.0
+   .\NLog.Extensions.Logging\1.0.0-rtm-beta2\lib\netstandard1.3\NLog.Extensions.Logging.dll   v1.0.0.0
+   .\AutoMapper\6.1.1\lib\netstandard1.3\AutoMapper.dll   v6.1.1.0
+   .\PdfSharp\1.50.4619-beta4c\lib\net20\PdfSharp.dll   v1.50.4619.0
+   .\System.Linq.Dynamic.Core\1.0.7.11\lib\netstandard2.0\System.Linq.Dynamic.Core.dll   v0.0.0.0
+   .\CoreCompat.System.Drawing\1.0.0-beta006\lib\netstandard1.3\CoreCompat.System.Drawing.dll   v1.0.0.0
+   .\MimeKit\1.16.1\lib\netstandard1.3\MimeKit.dll   v1.16.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Users\davinder.pal\.nuget\packages}  [ 20 , 21 ]
+   .\MailKit\1.16.1\lib\netstandard1.3\MailKit.dll   v1.16.0.0
+   .\Elasticsearch.Net\5.2.0\lib\netstandard1.3\Elasticsearch.Net.dll   v5.0.0.0</Info>
+  <Warning>Assembly {Renci.SshNet} is referenced by {HC.Patient.Service} but is not found.</Warning>
+  <Info>593 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
+  <Info>0 code rule has been extracted from code.</Info>
+  <Info>No dependency cycle detected in assemblies referencement graph.</Info>
+  <Info>Do merge code generated by compiler into application code.</Info>
+  <Info>Analyse dependencies of your application.</Info>
+  <Info>Log trend metrics values.</Info>
+  <Info>Execute queries and rules.</Info>
+  <Warning>1 quality gate warns.
+  - 'Critical Issues' value 1 issues greater than warn threshold 10 issues</Warning>
+  <Error>2 quality gates fail.
+  - 'Critical Rules Violated' value 6 rules greater than fail threshold 0 rules
+  - 'Debt Rating per Namespace' value 46 namespaces greater than fail threshold 0 namespaces</Error>
+  <Info>NDepend analysis done. Duration: 00:35</Info>
+  <Info>Building the report (standard).</Info>
+</InfoWarnings>

@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\IEntityService.cs" />
+    <Compile Remove="Interfaces\IHullTypeService.cs" />
+    <Compile Remove="Users\Interfaces\ISecUserService.cs" />
+    <Compile Remove="Users\SecUserService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.37" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="OpenTok" Version="3.1.0" />
+    <PackageReference Include="PDFsharp-MigraDoc-gdi" Version="1.50.5147" />
+    <PackageReference Include="PushSharp" Version="4.0.10" />
+    <PackageReference Include="Renci.SshNet.Async" Version="1.2.0" />
+    <PackageReference Include="Stripe.net" Version="35.10.0" />
+    <PackageReference Include="Svg" Version="2.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CCDAGeneration\CCDAGeneration.csproj" />
+    <ProjectReference Include="..\..\EDIGenerator\EDIGenerator.csproj" />
+    <ProjectReference Include="..\..\EDIParser\EDIParser.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Common\HC.Common.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Model\HC.Model.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Service\HC.Service.csproj" />
+    <ProjectReference Include="..\HC.Data\HC.Patient.Data.csproj" />
+    <ProjectReference Include="..\HC.Entity\HC.Patient.Entity.csproj" />
+    <ProjectReference Include="..\HC.Model\HC.Patient.Model.csproj" />
+    <ProjectReference Include="..\HC.Repositories\HC.Patient.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HL7SDK">
+      <HintPath>..\..\CCDAGeneration\ThirdPartyDll\HL7SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HL7SDK.Xml.Cda">
+      <HintPath>..\..\CCDAGeneration\ThirdPartyDll\HL7SDK.Xml.Cda.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTok.Server">
+      <HintPath>..\HC.Web\DLLs\OpenTok.Server.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

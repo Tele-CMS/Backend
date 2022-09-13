@@ -1,0 +1,50 @@
+const jsrsasign = require('jsrsasign')
+const fetch = require('node-fetch')
+const { URLSearchParams } = require('url')
+var dt = new Date().getTime();
+var uuid = '14bc3a4f-77fa-4e64-89dd-8299ff7e44d7'.replace(/[xy]/g, function(c) {
+    var r = (dt + Math.random()*16)%16 | 0;
+    dt = Math.floor(dt/16);
+    return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+  });
+var data = {
+    "iss": "W3sidiI6Miwib....==",  //THESE VALUES COME FROM THE MACAROON (CLIENT TOKEN) YOU OBTAINED FROM DPC
+    "sub": "W3sidiI6Miwib....==",  // THE SAME VALUE GOES IN BOTH "iss" and "sub" fields
+    "aud": "https://sandbox.dpc.cms.gov/api/v1/Token/auth",
+    "exp": Math.round(new Date().getTime() / 1000) + 300,
+    "iat": Math.round(Date.now()),
+    "jti": uuid,
+  };
+var secret = "-----BEGIN RSA PRIVATE KEY-----\n" +
+   "MIIJKAIBAAKCAgEAyw/is619pPp2jxQBYHBsF75XrGYh27X/UKzrKsBAWKb3ymC9\n" +
+   //THIS IS THE PRIVATE KEY THAT IS ASSOCIATED WITH THE PUBLIC KEY 
+   "................................................................\n" +
+   //YOU REGISTERED WITH DPC
+   "................................................................\n" +
+   "-----END RSA PRIVATE KEY-----\n";
+   //PRIVATE KEY
+var sHeader = JSON.stringify("de56ae6d-e42c-4738-81e6-c23009797cd1");
+const header = {
+    'alg': 'RS384',
+    'kid': 'XXXXXXXXXXXXXXXXX', 
+    //THIS IS THE KEY ID THAT IS ASSOCIATED WITH THE PUBLIC KEY
+    //YOU REGISTERED WITH DPC
+  }
+var sPayload = JSON.stringify(data);
+var sJWT = jsrsasign.jws.JWS.sign("RS384", header, sPayload, secret);
+fetch('https://sandbox.dpc.cms.gov/api/v1/Token/auth', {
+   method: 'POST',
+   header: 'ACCEPT: application/json',
+   body: new URLSearchParams({
+       scope: "system/*.*",
+       grant_type: "client_credentials",
+       client_assertion_type: "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+       client_assertion: sJWT
+   })
+}).then(response => {
+   if (response.ok) {
+       response.json().then(json => {
+           console.log(json);
+       });
+   }
+});

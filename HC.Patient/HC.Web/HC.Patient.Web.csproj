@@ -1,0 +1,234 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputType>exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+    <!--<PackageTargetFallback>portable-net45+win8</PackageTargetFallback>-->
+    <ApplicationIcon />
+    <OutputTypeEx>exe</OutputTypeEx>
+    <StartupObject />
+    <UserSecretsId>c1ac2596-311f-4670-92f5-c726afc6924f</UserSecretsId>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Images\**" />
+    <Content Remove="wwwroot\Images\**" />
+    <EmbeddedResource Remove="wwwroot\Images\**" />
+    <None Remove="wwwroot\Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AccountController.cs" />
+    <Compile Remove="Controllers\AppConfigurationController.cs" />
+    <Compile Remove="Controllers\AppointmentFilterController.cs" />
+    <Compile Remove="Controllers\AppointmentTypeController.cs" />
+    <Compile Remove="Controllers\AuthorizationController .cs" />
+    <Compile Remove="Controllers\AuthorizationProceduresController.cs" />
+    <Compile Remove="Controllers\AvailabilityTemplateController.cs" />
+    <Compile Remove="Controllers\BaseJsonApiController.cs" />
+    <Compile Remove="Controllers\CountryController.cs" />
+    <Compile Remove="Controllers\CustomJsonApiController.cs" />
+    <Compile Remove="Controllers\EDIGatewayController.cs" />
+    <Compile Remove="Controllers\EncounterCPTController.cs" />
+    <Compile Remove="Controllers\EncounterICDController.cs" />
+    <Compile Remove="Controllers\EntityController.cs" />
+    <Compile Remove="Controllers\HullTypeController.cs" />
+    <Compile Remove="Controllers\InsuranceCompaniesController.cs" />
+    <Compile Remove="Controllers\InsuredPersonController.cs" />
+    <Compile Remove="Controllers\JwtAuthTestController.cs" />
+    <Compile Remove="Controllers\JwtController.cs" />
+    <Compile Remove="Controllers\MasterCustomLabelController.cs" />
+    <Compile Remove="Controllers\MasterICDController.cs" />
+    <Compile Remove="Controllers\MasterInsuranceController.cs" />
+    <Compile Remove="Controllers\MasterInsuranceTypeController.cs" />
+    <Compile Remove="Controllers\MasterLocationController.cs" />
+    <Compile Remove="Controllers\MasterModulesController.cs" />
+    <Compile Remove="Controllers\MasterServiceCodeController.cs" />
+    <Compile Remove="Controllers\MasterTagsController.cs" />
+    <Compile Remove="Controllers\OrganizationDatabaseController.cs" />
+    <Compile Remove="Controllers\PatientAddressController.cs" />
+    <Compile Remove="Controllers\PatientAllergyController.cs" />
+    <Compile Remove="Controllers\PatientAppointmentController.cs" />
+    <Compile Remove="Controllers\PatientController.cs" />
+    <Compile Remove="Controllers\PatientCustomLabelsController.cs" />
+    <Compile Remove="Controllers\PatientDiagnosisController.cs" />
+    <Compile Remove="Controllers\PatientGuardianController.cs" />
+    <Compile Remove="Controllers\PatientImmunizationController.cs" />
+    <Compile Remove="Controllers\PatientInsuranceDetailController.cs" />
+    <Compile Remove="Controllers\PatientLabTestController.cs" />
+    <Compile Remove="Controllers\PatientMedicationController.cs" />
+    <Compile Remove="Controllers\PatientPhoneNumberController.cs" />
+    <Compile Remove="Controllers\PatientSocialHistoryController.cs" />
+    <Compile Remove="Controllers\PatientVitals.ex.Controller.cs" />
+    <Compile Remove="Controllers\PatientVitalsController.cs" />
+    <Compile Remove="Controllers\PayerActivityController.cs" />
+    <Compile Remove="Controllers\PayerAppointmentTypesController.cs" />
+    <Compile Remove="Controllers\PayerInformationController.cs" />
+    <Compile Remove="Controllers\RoleController.cs" />
+    <Compile Remove="Controllers\SecurityQuestionController.cs" />
+    <Compile Remove="Controllers\StaffController.cs" />
+    <Compile Remove="Controllers\StaffCustomLabelsController.cs" />
+    <Compile Remove="Controllers\StaffTagsController.cs" />
+    <Compile Remove="Controllers\StateController.cs" />
+    <Compile Remove="Controllers\TestController.cs" />
+    <Compile Remove="Controllers\TokenController.cs" />
+    <Compile Remove="Controllers\UserFavouriteController.cs" />
+    <Compile Remove="Controllers\UserRegister.cs" />
+    <Compile Remove="Controllers\UserRolesController.cs" />
+    <Compile Remove="Migrations\20180212121531_addedColumnsInPayerServiceCodes.cs" />
+    <Compile Remove="Migrations\20180212121531_addedColumnsInPayerServiceCodes.Designer.cs" />
+    <Compile Remove="Migrations\20180220065043_addedColumnsPatient.cs" />
+    <Compile Remove="Migrations\20180220065043_addedColumnsPatient.Designer.cs" />
+    <Compile Remove="Migrations\20180308113632_MenuTableDB.cs" />
+    <Compile Remove="Migrations\20180308113632_MenuTableDB.Designer.cs" />
+    <Compile Remove="Migrations\20180312055524_test123.cs" />
+    <Compile Remove="Migrations\20180312055524_test123.Designer.cs" />
+    <Compile Remove="Migrations\20180316085932_AddedTwoColumnsinSOAP.cs" />
+    <Compile Remove="Migrations\20180316085932_AddedTwoColumnsinSOAP.Designer.cs" />
+    <Compile Remove="Migrations\20180319122942_CreatedTableClaimHistory.cs" />
+    <Compile Remove="Migrations\20180319122942_CreatedTableClaimHistory.Designer.cs" />
+    <Compile Remove="Migrations\20180323050703_UpdateClaimServicweLines.cs" />
+    <Compile Remove="Migrations\20180323050703_UpdateClaimServicweLines.Designer.cs" />
+    <Compile Remove="Migrations\20180410050538_addauthorizationappointment.cs" />
+    <Compile Remove="Migrations\20180410050538_addauthorizationappointment.Designer.cs" />
+    <Compile Remove="Migrations\20180412042652_MessageSystemDB.cs" />
+    <Compile Remove="Migrations\20180412042652_MessageSystemDB.Designer.cs" />
+    <Compile Remove="Migrations\20180414075739_AddAdjGroupCode.cs" />
+    <Compile Remove="Migrations\20180414075739_AddAdjGroupCode.Designer.cs" />
+    <Compile Remove="Migrations\20180423110844_MessageDocConfig.cs" />
+    <Compile Remove="Migrations\20180423110844_MessageDocConfig.Designer.cs" />
+    <Compile Remove="Migrations\20180430054309_AddModifiersDb.cs" />
+    <Compile Remove="Migrations\20180430054309_AddModifiersDb.Designer.cs" />
+    <Compile Remove="Migrations\20180507091205_nullablepatientidtoencounter.cs" />
+    <Compile Remove="Migrations\20180507091205_nullablepatientidtoencounter.Designer.cs" />
+    <Compile Remove="Migrations\20180515064607_payrollchnages.cs" />
+    <Compile Remove="Migrations\20180515064607_payrollchnages.Designer.cs" />
+    <Compile Remove="Migrations\20180529055544_usertimesheet.cs" />
+    <Compile Remove="Migrations\20180529055544_usertimesheet.Designer.cs" />
+    <Compile Remove="Migrations\20180529074129_AddedFieldinStaffLeave.cs" />
+    <Compile Remove="Migrations\20180529074129_AddedFieldinStaffLeave.Designer.cs" />
+    <Compile Remove="Migrations\20180529075116_AddedFieldinStaffLeave.cs" />
+    <Compile Remove="Migrations\20180529075116_AddedFieldinStaffLeave.Designer.cs" />
+    <Compile Remove="Migrations\20180531083237_UserTimesheetByAptType.cs" />
+    <Compile Remove="Migrations\20180531083237_UserTimesheetByAptType.Designer.cs" />
+    <Compile Remove="Migrations\20180626054837_appointmentSignature.cs" />
+    <Compile Remove="Migrations\20180626054837_appointmentSignature.Designer.cs" />
+    <Compile Remove="Migrations\20180702121152_Location.cs" />
+    <Compile Remove="Migrations\20180702121152_Location.Designer.cs" />
+    <Compile Remove="Migrations\20180710054408_ClaimProviders.cs" />
+    <Compile Remove="Migrations\20180710054408_ClaimProviders.Designer.cs" />
+    <Compile Remove="Migrations\20180716054639_userpasswordhistory.cs" />
+    <Compile Remove="Migrations\20180716054639_userpasswordhistory.Designer.cs" />
+    <Compile Remove="Migrations\20180810090013_asdfff.cs" />
+    <Compile Remove="Migrations\20180810090013_asdfff.Designer.cs" />
+    <Compile Remove="Migrations\20180814061817_AddedTableEDI999AcknowledgementMaster.cs" />
+    <Compile Remove="Migrations\20180814061817_AddedTableEDI999AcknowledgementMaster.Designer.cs" />
+    <Compile Remove="Migrations\20200224052733_AddTableStaffSpeciality.cs" />
+    <Compile Remove="Migrations\20200224052733_AddTableStaffSpeciality.Designer.cs" />
+    <Compile Remove="Migrations\20200326170745_AddedEntitiesForMasterTemplates.cs" />
+    <Compile Remove="Migrations\HCMaster\20180109044248_AddedSuperUserToMasterContext.cs" />
+    <Compile Remove="Migrations\HCMaster\20180109044248_AddedSuperUserToMasterContext.Designer.cs" />
+    <Compile Remove="Migrations\HCMaster\20200121094728_testtt123.cs" />
+    <Compile Remove="Startup-bak.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Documents\ClientDocuments\" />
+    <Folder Include="Images\PatientInsurancePhotos\thumb\" />
+    <Folder Include="Images\PatientPhotos\thumb\" />
+    <Folder Include="Images\SpecialityPhotos\thumb\" />
+    <Folder Include="Models\" />
+    <Folder Include="PatientPhotos\" />
+    <Folder Include="wwwroot\hl7Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="DataTables.AspNet.AspNetCore" Version="2.0.2" />
+    <PackageReference Include="Elmah.Io.AspNetCore" Version="3.2.41-pre" />
+    <!--<PackageReference Include="EntityFramework.DynamicLinq" Version="1.0.4.7" />-->
+    <PackageReference Include="Ical.Net" Version="3.0.11-net-core-beta" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="2.0.0-preview1-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Moq" Version="4.7.99" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-beta5" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.1" />
+    <PackageReference Include="RobertHargreaves.log4net.Trunk" Version="2.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
+    <PackageReference Include="Unofficial.Ionic.Zip" Version="1.9.1.8" />
+    <!--<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" PrivateAssets="All" />-->
+    <!--<PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EDIGenerator\EDIGenerator.csproj" />
+    <ProjectReference Include="..\..\EDIParser\EDIParser.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Common\HC.Common.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Model\HC.Model.csproj" />
+    <ProjectReference Include="..\HC.Data\HC.Patient.Data.csproj" />
+    <ProjectReference Include="..\HC.Model\HC.Patient.Model.csproj" />
+    <ProjectReference Include="..\HC.Repositories\HC.Patient.Repositories.csproj" />
+    <ProjectReference Include="..\HC.Service\HC.Patient.Service.csproj" />
+    <ProjectReference Include="..\NLog.Targets.ElasticSearch\NLog.Targets.ElasticSearch.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Files\CDA.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HL7SDK">
+      <HintPath>..\..\CCDAGeneration\ThirdPartyDll\HL7SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HL7SDK.Xml.Cda">
+      <HintPath>..\..\CCDAGeneration\ThirdPartyDll\HL7SDK.Xml.Cda.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTok.Server">
+      <HintPath>DLLs\OpenTok.Server.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

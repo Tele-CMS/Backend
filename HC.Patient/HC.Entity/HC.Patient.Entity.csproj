@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MasterStatus.cs" />
+    <Compile Remove="MasterType.cs" />
+    <Compile Remove="PASCore_AddressBook.cs" />
+    <Compile Remove="PASCore_Entity.cs" />
+    <Compile Remove="PASCore_HullType.cs" />
+    <Compile Remove="PASCore_Offices.cs" />
+    <Compile Remove="PASCore_Roles.cs" />
+    <Compile Remove="PASCore_UserRoles.cs" />
+    <Compile Remove="PASCore_Users.cs" />
+    <Compile Remove="PASCore_Vessel.cs" />
+    <Compile Remove="PASCore_VesselType.cs" />
+    <Compile Remove="PatientPreference.cs" />
+    <Compile Remove="Provider.cs" />
+    <Compile Remove="RoleMaster.cs" />
+    <Compile Remove="SecUser.cs" />
+    <Compile Remove="Staff.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="AuthProcedureCPT.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="Ical.Net" Version="3.0.11-net-core-beta" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.1" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\HC.Common\HC.Common\HC.Common.csproj" />
+  </ItemGroup>
+
+</Project>

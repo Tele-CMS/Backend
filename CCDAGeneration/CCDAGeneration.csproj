@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HC.Common\HC.Common\HC.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HL7SDK">
+      <HintPath>ThirdPartyDll\HL7SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HL7SDK.Xml.Cda">
+      <HintPath>ThirdPartyDll\HL7SDK.Xml.Cda.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+add-migration <migrationname> -Context DbName
+Script-migration 201803280627424_initialcreate100 -Context DbName
+
+
+
+
+error
+-----------
+At line:1 char:33
++ add-migration AddedNewMigration -Context DataBaseContext
++                                 ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Add-Migration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Add-Migration
+ 
+PM> add-migration AddedNewMigration -Context DataBaseContext
+Add-Migration : A parameter cannot be found that matches parameter name 'Context'.
+At line:1 char:33
++ add-migration AddedNewMigration -Context DataBaseContext
++                                 ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Add-Migration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Add-Migration
+ 

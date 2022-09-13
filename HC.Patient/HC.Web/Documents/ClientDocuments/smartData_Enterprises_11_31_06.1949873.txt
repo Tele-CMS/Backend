@@ -1,0 +1,55 @@
+<td>{client.isActive === true ? <span className="yellowfont status"><i className="fa fa-circle font10" aria-hidden="true"></i> Active</span> : <span className="redfont status"><i className="fa fa-circle font10" aria-hidden="true"></i> Inactive</span>}</td>
+
+
+
+  <GooglePlaceAutocomplete
+                  // Function to return lat and lng
+                  results={this.getCoords}
+                  autoFocus={true}
+                  name="Address"
+                  ref="Address"
+                  type="text"
+                  maxLength="55"
+                  label="Address"                  
+                  //onChange={this.getCoords}
+                  // normalize = {isValidNameWithSpace}
+                  fullWidth={true}
+                  component={renderTextField}
+                  componentRestrictions={{country: 'us'}}
+                />
+				
+				 this.getCoords = this.getCoords.bind(this);
+				 
+				 
+				 
+				 getCoords(lat, lng) {    
+    //console.log(lat, lng, this.refs.Address.state.searchText);
+    let address = this.refs.Address.state.searchText;
+    if(address !== '')
+    {
+      let splitedaddress = address.split(',');
+      if (splitedaddress.length > 0) {           
+          
+          this.props.dispatch(change('UserInfoForm', 'City', splitedaddress[splitedaddress.length - 3].trim()));            
+          let countryObj = extractDataFromArrayByValue(this.props.masterCountry, splitedaddress[splitedaddress.length - 1].trim());
+          if(countryObj){
+            this.props.dispatch(change('UserInfoForm', 'CountryID', countryObj.id));
+            this.getFilteredStatesList(countryObj.id);      
+          }
+          //console.log('splitedaddress[2].trim()).........',splitedaddress[splitedaddress.length - 2].trim());
+          let stateObj = extractDataFromArrayByValue(this.props.masterState, splitedaddress[splitedaddress.length - 2].trim());
+          if(stateObj){
+            this.props.dispatch(change('UserInfoForm', 'StateID', stateObj.id ));
+          }      
+          this.props.dispatch(change('UserInfoForm', 'Address', splitedaddress[splitedaddress.length - 4].trim()));      
+        }
+    }
+	
+	
+	
+	<div className="col-sm-4 mt-40">
+                  <Field
+                    name="IsActive"
+                    label="Is Active"
+                    component={renderCheckBox}/>
+                </div>

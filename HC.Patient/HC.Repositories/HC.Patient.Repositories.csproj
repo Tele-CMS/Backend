@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IRepositories\Billing\**" />
+    <EmbeddedResource Remove="IRepositories\Billing\**" />
+    <None Remove="IRepositories\Billing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityRepository.cs" />
+    <Compile Remove="HullTypeRepository.cs" />
+    <Compile Remove="Interfaces\IEntityRepository.cs" />
+    <Compile Remove="Interfaces\IHullTypeRepository.cs" />
+    <Compile Remove="Interfaces\IRoleRepository.cs" />
+    <Compile Remove="Interfaces\ISecUserRepository.cs" />
+    <Compile Remove="Interfaces\IUserRepository.cs" />
+    <Compile Remove="Interfaces\IUserRoleRepository.cs" />
+    <Compile Remove="RoleRepository.cs" />
+    <Compile Remove="SecUserRepository.cs" />
+    <Compile Remove="UserRepository.cs" />
+    <Compile Remove="UserRoleRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="DataTables.AspNet.Core" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="PDFsharp-MigraDoc-GDI" Version="1.50.5147" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CCDAGeneration\CCDAGeneration.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Common\HC.Common.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Repositories\HC.Repositories.csproj" />
+    <ProjectReference Include="..\HC.Data\HC.Patient.Data.csproj" />
+    <ProjectReference Include="..\HC.Entity\HC.Patient.Entity.csproj" />
+    <ProjectReference Include="..\HC.Model\HC.Patient.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IRepositories\PatientEncLinkedDataChanges\" />
+  </ItemGroup>
+
+</Project>
